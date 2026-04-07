@@ -34,7 +34,7 @@ figure(2)
  bp.FrequencyUnit = "Hz";
  grid on
 
-%Sweeping the CLK frequency across the frequencies of interest
+%% Sweeping the CLK frequency across the frequencies of interest
 % ie 10^2 --> 10^6
 
 for fclkstep = logspace(2,6,20)
@@ -53,22 +53,27 @@ for fclkstep = logspace(2,6,20)
   grid on
 end
 
-%Sweeping R3
+%% Sweeping R3 of the filter
 
-for fclkstep = logspace(2,6,20)
- filter1 = FilterParams(fclkstep, RATIO, 267000, 4990, 255000, 4990, 7320);
- filter2 = FilterParams(fclkstep, RATIO, 15000, 4990, 255000, 4990, 8660);
+for rstep = logspace(3,6,20)
+ fclktest = 64000;
+ filter1 = FilterParams(fclktest, RATIO, 267000, 4990, rstep, 4990, 7320);
+ filter2 = FilterParams(fclktest, RATIO, 15000, 4990, rstep, 4990, 8660);
  %inputs fclk, ratio, R1, R2, R3, R5, R6
  %outputs 1 = f0, Q = 2, BW = 3, BpG = 4, LpG = 5
 
  H1 = tf([filter1(4)*filter1(3)*(2*pi)^2 0],[1 filter1(3)*2*pi (filter1(1)*2*pi)^2]);
  H2 = tf([filter2(5)*(filter2(1)*2*pi)^2],[1 filter2(3)*2*pi (filter2(1)*2*pi)^2]);
  H = H1*H2;
- figure(3)
+ figure(4)
   hold on
   bp = bodeplot(H);
   bp.FrequencyUnit = "Hz";
   grid on
+  str = sprintf('R3 = %.1f',rstep);
+  legend(str)
+  %cant get the legend to work properly :(
+  hold on
 end
 
 
