@@ -412,6 +412,14 @@
     [
       "8ea2dc21-a8e6-4e4a-8986-17442369c6c0",
       "Root"
+    ],
+    [
+      "62b2a83c-7ebf-4efa-a973-9882133fc683",
+      "filterBlock"
+    ],
+    [
+      "f4d24c15-b9a1-4709-a145-87d4fc451040",
+      "powerSupply"
     ]
   ],
   "text_variables": {}
