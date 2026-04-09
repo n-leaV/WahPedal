@@ -1534,6 +1534,16 @@
 	)
 	(wire
 		(pts
+			(xy 154.94 88.9) (xy 165.1 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc2d53b3-c470-4613-914c-2ec1d71c43c8")
+	)
+	(wire
+		(pts
 			(xy 114.3 104.14) (xy 129.54 104.14)
 		)
 		(stroke
@@ -2428,6 +2438,72 @@
 			(project "Filter"
 				(path "/8ea2dc21-a8e6-4e4a-8986-17442369c6c0/62b2a83c-7ebf-4efa-a973-9882133fc683"
 					(reference "R32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDA")
+		(at 165.1 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c9769b7f-9dc3-4c2a-a2e6-9bfd9e1a303a")
+		(property "Reference" "#PWR01"
+			(at 165.1 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GNDA"
+			(at 165.1 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 165.1 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 165.1 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
+			(at 165.1 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ca38d693-9176-4ef3-a6b7-4bf942d3bb3e")
+		)
+		(instances
+			(project "Filter"
+				(path "/8ea2dc21-a8e6-4e4a-8986-17442369c6c0/62b2a83c-7ebf-4efa-a973-9882133fc683"
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
