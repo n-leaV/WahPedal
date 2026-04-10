@@ -364,6 +364,48 @@
 			(embedded_fonts no)
 		)
 	)
+	(wire
+		(pts
+			(xy 166.37 60.96) (xy 184.15 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "049dbc3b-a3e9-40ea-b59f-95a4e2b013ad")
+	)
+	(wire
+		(pts
+			(xy 166.37 63.5) (xy 184.15 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5812be05-0e8e-456c-9e58-c4f8538c773a")
+	)
+	(hierarchical_label "3.3Vout"
+		(shape input)
+		(at 184.15 63.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7f4d74ea-ab2a-4cb1-af06-cd8e180fe5eb")
+	)
+	(hierarchical_label "5Vout"
+		(shape input)
+		(at 184.15 60.96 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f6991061-72e6-4089-983c-46e5caff7200")
+	)
 	(symbol
 		(lib_id "Misc:MIC5211-LXYM6-TR")
 		(at 138.43 59.69 0)
