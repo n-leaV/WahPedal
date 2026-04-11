@@ -1,5 +1,5 @@
 **Wah Pedal**
-
+Nick Leavitt, n-leaV
 
 
 Project to Design and Build a Wah Pedal. This project consists of a variable center frequency bandpass filter. Most of the project design is centered around the LTC1067-50. 
@@ -12,11 +12,21 @@ From the LTC1067 data sheet, "The LTC ® 1067/LTC1067-50 consist of two identica
 
 The LTC1067-50 allows for construction of two two-integrator-loop biquads. The biquads are structured to provide a 4th order bandpass filter. Due to the nature of the chip(Switched Capacitor), the center frequencies of the biquads can be controlled via an input clock frequency. Ideally the Q factor of the filter can also be controlled via a potentiometer.
 
+The MIC 5211 is a dual voltage LDO. This will generate the 5v and 3.3v rails needed to drive the filtering block and the clock block respectively. The MIC 5211 has two seperate enable pins, one for each output. These can be used to sequence the power on startup.
+
+The LTC6900 is a variable frequency resistor set oscillator. This will be used inconjuction with a pedal potentiometer to generate a variable frequency signal that will clock the filter block. This chip will run off the 3.3v rail from the MIC 5211.
 
 
-**Files**
+**Files/Folders**
 
 
 
-Filter.m	"Transfer function modeling of the bandpass filter via LTC1067-50"
+/matlab/Filter.m	"Transfer function modeling of the bandpass filter via LTC1067-50"
 
+/KiCad/Filter "KiCad project files for the Wah pedal"
+
+/LTC1067 "Data sheet and figures pertaining to the switched capacitor chip"
+
+/LTC6900 "Data Sheet and figures pertaining to clock generation"
+
+/MIC5211 "Data Sheet and figures pertaining to power rail generation"
