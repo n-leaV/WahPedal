@@ -1922,6 +1922,16 @@
 	)
 	(wire
 		(pts
+			(xy 223.52 133.35) (xy 229.87 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c9c22d3-f06e-4ccd-97fd-4846f5f2c95a")
+	)
+	(wire
+		(pts
 			(xy 177.8 74.93) (xy 191.77 74.93)
 		)
 		(stroke
@@ -3699,6 +3709,74 @@
 			(project "Filter"
 				(path "/8ea2dc21-a8e6-4e4a-8986-17442369c6c0"
 					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 219.71 133.35 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e5d6ea89-8cea-46dd-906b-be96dbbab94a")
+		(property "Reference" "C13"
+			(at 219.71 125.73 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "C"
+			(at 219.71 128.27 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 223.52 132.3848 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 219.71 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 219.71 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c0e4ad6f-0973-48f4-88c2-53a2312b826a")
+		)
+		(pin "2"
+			(uuid "e2364019-a366-4344-a8af-e3bbbe652687")
+		)
+		(instances
+			(project ""
+				(path "/8ea2dc21-a8e6-4e4a-8986-17442369c6c0"
+					(reference "C13")
 					(unit 1)
 				)
 			)
