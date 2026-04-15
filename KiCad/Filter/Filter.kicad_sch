@@ -1804,6 +1804,16 @@
 		)
 		(uuid "6121e9dd-af89-43ac-8da8-aaa6262df049")
 	)
+	(text "Need to consider DC bias."
+		(exclude_from_sim no)
+		(at 166.878 96.52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "91e6bf01-071a-4a43-8f3b-4974e5f1f681")
+	)
 	(text "J1 Connects to pedal pot."
 		(exclude_from_sim no)
 		(at 232.918 48.006 0)
